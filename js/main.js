@@ -4,14 +4,15 @@
    ========================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Mark the current page in the navigation.
-  const current = document.body.dataset.page;
+  // 01. Highlight the active nav item based on the current page.
+  const currentPage = document.body.dataset.page;
   document.querySelectorAll("[data-nav]").forEach((link) => {
-    if (link.dataset.nav === current) link.classList.add("active");
+    if (link.dataset.nav === currentPage) link.classList.add("active");
   });
 
-  // Reveal content as it enters the viewport.
+  // 02. Reveal sections when they enter the viewport.
   const revealItems = document.querySelectorAll(".reveal");
+
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(
       (entries, obs) => {
@@ -24,8 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       { threshold: 0.12 }
     );
+
     revealItems.forEach((item) => observer.observe(item));
   } else {
+    // Fallback for older browsers without IntersectionObserver.
     revealItems.forEach((item) => item.classList.add("visible"));
   }
 });

@@ -3,6 +3,10 @@
    Core visual system: layout, typography, color, components
    ========================================================= */
 
+/* ---------------------------------------------------------
+   01. Design tokens & base styles
+   --------------------------------------------------------- */
+
 :root {
   --bg: #0a0d11;
   --surface: #10151c;
@@ -37,6 +41,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
   margin-inline: auto;
 }
 
+/* ---------------------------------------------------------
+   02. Header & navigation
+   --------------------------------------------------------- */
+
 .site-header {
   position: sticky;
   top: 0;
@@ -55,13 +63,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .logo {
   display: inline-grid;
   place-items: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  background: var(--text);
-  color: #0a0d11;
-  font-weight: 900;
   letter-spacing: -0.05em;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.08);
 }
 .nav-links {
   display: flex;
@@ -72,6 +79,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 .nav-links a:hover,
 .nav-links a.active { color: var(--text); }
+
+/* ---------------------------------------------------------
+   03. Hero section
+   --------------------------------------------------------- */
 
 .hero {
   min-height: calc(100vh - 76px);
@@ -164,6 +175,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .code .string { color: var(--accent); }
 .code .comment { color: #687583; }
 
+/* ---------------------------------------------------------
+   04. Content sections & cards
+   --------------------------------------------------------- */
+
 .section { padding: 105px 0; }
 .section-head {
   display: flex;
@@ -206,6 +221,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .project-card h3 { margin: 52px 0 10px; font-size: 1.55rem; }
 .project-card p { margin: 0; color: var(--muted); }
 .project-link { margin-top: auto; padding-top: 28px; color: var(--accent); font-weight: 700; }
+
+/* ---------------------------------------------------------
+   05. Inner page layouts
+   --------------------------------------------------------- */
 
 .page-hero { padding: 100px 0 60px; }
 .page-hero h1 {
@@ -285,6 +304,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
   margin-top: 24px;
 }
 
+/* ---------------------------------------------------------
+   06. Contact, footer & motion
+   --------------------------------------------------------- */
+
 .site-footer {
   padding: 34px 0 52px;
   border-top: 1px solid rgba(255,255,255,.06);
@@ -304,6 +327,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
   transition: opacity .6s ease, transform .6s ease;
 }
 .reveal.visible { opacity: 1; transform: none; }
+
+/* ---------------------------------------------------------
+   07. Responsive styles
+   --------------------------------------------------------- */
 
 @media (max-width: 860px) {
   .hero-grid, .split { grid-template-columns: 1fr; }
