@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://aminjancodes-lgtm.github.io/AminJan-Portfolio/</loc></url>
-  <url><loc>https://aminjancodes-lgtm.github.io/AminJan-Portfolio/about.html</loc></url>
-  <url><loc>https://aminjancodes-lgtm.github.io/AminJan-Portfolio/projects.html</loc></url>
-  <url><loc>https://aminjancodes-lgtm.github.io/AminJan-Portfolio/experience.html</loc></url>
-  <url><loc>https://aminjancodes-lgtm.github.io/AminJan-Portfolio/contact.html</loc></url>
+  <url><loc>https://aminjancodes.vercel.app/</loc></url>
+  <url><loc>https://aminjancodes.vercel.app/about.html</loc></url>
+  <url><loc>https://aminjancodes.vercel.app/projects.html</loc></url>
+  <url><loc>https://aminjancodes.vercel.app/experience.html</loc></url>
+  <url><loc>https://aminjancodes.vercel.app/contact.html</loc></url>
 </urlset>

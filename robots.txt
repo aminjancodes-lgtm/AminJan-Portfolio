@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aminjancodes-lgtm.github.io/AminJan-Portfolio/sitemap.xml
+Sitemap: https://aminjancodes.vercel.app/sitemap.xml
